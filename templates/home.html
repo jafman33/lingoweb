@@ -1,213 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'layout.html' %}
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>3L-Ranch</title>
-	<meta name="description" content="3L-Ranch" />
-	<meta name="keywords" content="3L-Ranch" />
-	<meta name="author" content="tempload" />
+<!--  -->
+{% block content %}
 
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="../static/assets/images/favicon.png" />
 
-	<!-- Bootstrap & Plugins CSS -->
-	<link href="../static/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="../static/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- ***** Wellcome Area Start ***** -->
+<section class="welcome-area">
+	<!-- ***** Wellcome Area Background Start ***** -->
+	<div class="welcome-bg" data-bg="../static/assets/images/photos/welcome_banner.jpg">
+		<img src="../static/assets/images/bg-bottom.svg" alt="">
+	</div>
+	<!-- ***** Wellcome Area Background End ***** -->
 
-	<!-- Custom CSS -->
-	<link href="../static/assets/css/style.css" rel="stylesheet" type="text/css">
-</head>
+	<!-- ***** Wellcome Area Content Start ***** -->
+	<div class="welcome-content" style="text-align: center;">
+		<div class="container">
+			<div class="row">
 
-<body>
+				<div class="offset-lg-1 col-lg-5 col-md-12 align-self-center">
+					<img src="../static/assets/images/photos/welcome2.png" alt="">
+				</div>
 
-	<!-- ***** Preloader Start ***** -->
-	<div class="loader-wrapper">
-		<div class="center">
-			<div class="dot dot-one"></div>
-			<div class="dot dot-two"></div>
-			<div class="dot dot-three"></div>
-			<div class="dot dot-four"></div>
-			<div class="dot dot-five"></div>
+				<div class="col-lg-6 col-md-12 align-self-center">
+					<h1><b>The free, fun, and effective way to improve your English</b></h1>
+					<a class="btn-white-line" href="https://triple-lranch.com">GET STARTED</a>
+				</div>
+
+			</div>
 		</div>
 	</div>
-	<!-- ***** Preloader End ***** -->
+	<!-- ***** Wellcome Area Content End ***** -->
+</section>
+<!-- ***** Wellcome Area End ***** -->
 
-	<!-- ***** Header Area Start ***** -->
-	<header class="header-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<nav class="main-nav">
-						<!-- ***** Logo Start ***** -->
-						<a href="{{ url_for('home') }}" class="logo">
-							<img src="../static/assets/images/logo-white.svg" class="light-logo" alt="Beapp" />
-							<img src="../static/assets/images/logo-dark.svg" class="dark-logo" alt="Beapp" />
-						</a>
-						<!-- ***** Logo End ***** -->
 
-						<!-- ***** Menu Start ***** -->
-						<ul class="nav">
-							<!-- <li><a href="{{ url_for('home') }}">HOME</a></li> -->
-							<!-- <li><a href="our-work.html">OUR WORK</a></li> -->
-							<!-- <li><a href="about-us.html">ABOUT US</a></li> -->
-							<!-- <li><a href="services.html">SERVICES</a></li> -->
-							<!-- <li><a href="blog.html">BLOG</a></li> -->
-							<!-- <li><a href="contact.html" class="btn-nav-line">CONTACT</a></li> -->
-						</ul>
-						<a class="menu-trigger">
-							<!-- <span>Menu</span> -->
-						</a>
-						<!-- ***** Menu End ***** -->
-					</nav>
+<!-- ***** Home About - Services Start ***** -->
+<section class="section services-section pbottom-70">
+	<div class="container">
+		<div class="row">
+			<!-- ***** Home About Start ***** -->
+			<div class="col-lg-5 col-md-12 col-sm-12 align-self-bottom">
+				<img src="../static/assets/images/photos/test.gif" alt="" style="display: block; width:180px; margin-left: auto; margin-right: auto; margin-bottom:20px;">
+				<div class=" left-heading">
+					<h2 class="section-title">The world's #1 way to improve your English!</h2>
+				</div>
+				<div class="left-text">
+					<p class="dark">Learning with 3L-Ranch is fun, and <a href="#">research shows that it works!</a></p>
+					<p>With quick, bite-sized lessons, you'll have fun while enhancing your real-world communication skills</p>
 				</div>
 			</div>
-		</div>
-	</header>
-	<!-- ***** Header Area End ***** -->
+			<!-- ***** Home About End ***** -->
 
-
-	<!-- ***** Wellcome Area Start ***** -->
-	<section class="welcome-area">
-		<!-- ***** Wellcome Area Background Start ***** -->
-		<div class="welcome-bg" data-bg="../static/assets/images/photos/welcome_banner.jpg">
-			<img src="../static/assets/images/bg-bottom.svg" alt="">
-		</div>
-		<!-- ***** Wellcome Area Background End ***** -->
-
-		<!-- ***** Wellcome Area Content Start ***** -->
-		<div class="welcome-content" style="text-align: center;">
-			<div class="container">
+			<!-- ***** Home Services Start ***** -->
+			<div class="offset-lg-1 col-lg-6 col-md-12 col-sm-12 align-self-bottom">
 				<div class="row">
-
-					<div class="offset-lg-1 col-lg-5 col-md-12 align-self-center">
-						<img src="../static/assets/images/photos/welcome2.png" alt="">
+					<div class="col-lg-6 col-md-6 col-12">
+						<a href="services-single.html" class="home-services-item mtop-70" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
+							<i class="fa fa-clone"></i>
+							<!-- <img src="../static/assets/images/favicon.png" alt="" style="width:50px; margin-bottom:20px;"> -->
+							<h5 class="services-title">Effective and efficient</h5>
+							<p>Our courses effectively and efficiently teach listening skills.</p>
+						</a>
+						<a href="services-single.html" class="home-services-item" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
+							<i class="fa fa-connectdevelop"></i>
+							<h5 class="services-title">Personalized learning</h5>
+							<p>Lessons are tailored to help you learn at just the right level and pace</p>
+						</a>
 					</div>
-
-					<div class="col-lg-6 col-md-12 align-self-center">
-						<h1><b>The free, fun, and effective way to improve your English</b></h1>
-						<a class="btn-white-line" href="https://triple-lranch.com">GET STARTED</a>
+					<div class="col-lg-6 col-md-6 col-12">
+						<a href="services-single.html" class="home-services-item" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s">
+							<i class="fa fa-object-ungroup"></i>
+							<h5 class="services-title">Stay motivated</h5>
+							<p>With game-like features, its easy to stay motivated!</p>
+						</a>
+						<a href="services-single.html" class="home-services-item" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s">
+							<i class="fa fa-line-chart"></i>
+							<h5 class="services-title">Have fun with it</h5>
+							<p>Effective learning doesnt have to be boring! Build your skills each day with engaging exercises.</p>
+						</a>
 					</div>
-
 				</div>
 			</div>
+			<!-- ***** Home Services End ***** -->
 		</div>
-		<!-- ***** Wellcome Area Content End ***** -->
-	</section>
-	<!-- ***** Wellcome Area End ***** -->
+	</div>
+</section>
+<!-- ***** Home About - Services Start ***** -->
 
 
-	<!-- ***** Home About - Services Start ***** -->
-	<section class="section services-section pbottom-70">
-		<div class="container">
-			<div class="row">
-				<!-- ***** Home About Start ***** -->
-				<div class="col-lg-5 col-md-12 col-sm-12 align-self-bottom">
-					<img src="../static/assets/images/photos/test.gif" alt="" style="display: block; width:180px; margin-left: auto; margin-right: auto; margin-bottom:20px;">
-					<div class=" left-heading">
-						<h2 class="section-title">The world's #1 way to improve your English!</h2>
-					</div>
-					<div class="left-text">
-						<p class="dark">Learning with 3L-Ranch is fun, and <a href="#">research shows that it works!</a></p>
-						<p>With quick, bite-sized lessons, you'll have fun while enhancing your real-world communication skills</p>
-					</div>
-				</div>
-				<!-- ***** Home About End ***** -->
-
-				<!-- ***** Home Services Start ***** -->
-				<div class="offset-lg-1 col-lg-6 col-md-12 col-sm-12 align-self-bottom">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-12">
-							<a href="services-single.html" class="home-services-item mtop-70" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
-								<i class="fa fa-clone"></i>
-								<!-- <img src="../static/assets/images/favicon.png" alt="" style="width:50px; margin-bottom:20px;"> -->
-								<h5 class="services-title">Effective and efficient</h5>
-								<p>Our courses effectively and efficiently teach listening skills.</p>
-							</a>
-							<a href="services-single.html" class="home-services-item" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
-								<i class="fa fa-connectdevelop"></i>
-								<h5 class="services-title">Personalized learning</h5>
-								<p>Lessons are tailored to help you learn at just the right level and pace</p>
-							</a>
+<!-- ***** Features Start ***** -->
+<section class="section background">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 col-md-12 col-12 align-self-center">
+				<img src="../static/assets/images/mockup/hand.png" class="img-fluid d-block mx-auto" alt="">
+			</div>
+			<div class="col-lg-7 col-md-12 align-self-center">
+				<ul class="features">
+					<li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
+						<div class="count">
+							<span>1</span>
 						</div>
-						<div class="col-lg-6 col-md-6 col-12">
-							<a href="services-single.html" class="home-services-item" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s">
-								<i class="fa fa-object-ungroup"></i>
-								<h5 class="services-title">Stay motivated</h5>
-								<p>With game-like features, its easy to stay motivated!</p>
-							</a>
-							<a href="services-single.html" class="home-services-item" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s">
-								<i class="fa fa-line-chart"></i>
-								<h5 class="services-title">Have fun with it</h5>
-								<p>Effective learning doesnt have to be boring! Build your skills each day with engaging exercises.</p>
-							</a>
+						<div class="text">
+							<h5 class="title">Design and UX that ensures your app will be loved and used</h5>
+							<p>Quisque nec consectetur arcu. Duis tellus ante, sodales sed molestie at, sagittis id neque. Quisque condimentum libero arcu. Mauris tellus sem, ultrices varius nisl at.</p>
 						</div>
-					</div>
-				</div>
-				<!-- ***** Home Services End ***** -->
+					</li>
+					<li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s">
+						<div class="count">
+							<span>2</span>
+						</div>
+						<div class="text">
+							<h5 class="title">Enterprise-grade development secures reliability and quality</h5>
+							<p>Praesent tortor nulla, ullamcorper vel ante at, varius tincidunt augue. Cras vitae consectetur arcu. Proin at velit vel risus elementum accumsan sed non neque. Aenean risus.</p>
+						</div>
+					</li>
+					<li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+						<div class="count">
+							<span>3</span>
+						</div>
+						<div class="text">
+							<h5 class="title">A proven and tested process guarantees your success</h5>
+							<p>Aliquam bibendum velit ut ante cursus, et efficitur lectus rutrum. Maecenas ac convallis lorem, non ultricies sem. Duis elit metus, ullamcorper sed ante sed, viverra bibendum neque.</p>
+						</div>
+					</li>
+					<li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.5s">
+						<div class="count">
+							<span>4</span>
+						</div>
+						<div class="text">
+							<h5 class="title">Start-to-end app development agency</h5>
+							<p>Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque posuere vestibulum lorem.</p>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
-	</section>
-	<!-- ***** Home About - Services Start ***** -->
+	</div>
+</section>
+<!-- ***** Features End ***** -->
 
 
-	<!-- ***** Features Start ***** -->
-	<section class="section background">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 col-md-12 col-12 align-self-center">
-					<img src="../static/assets/images/mockup/hand.png" class="img-fluid d-block mx-auto" alt="">
-				</div>
-				<div class="col-lg-7 col-md-12 align-self-center">
-					<ul class="features">
-						<li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
-							<div class="count">
-								<span>1</span>
-							</div>
-							<div class="text">
-								<h5 class="title">Design and UX that ensures your app will be loved and used</h5>
-								<p>Quisque nec consectetur arcu. Duis tellus ante, sodales sed molestie at, sagittis id neque. Quisque condimentum libero arcu. Mauris tellus sem, ultrices varius nisl at.</p>
-							</div>
-						</li>
-						<li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s">
-							<div class="count">
-								<span>2</span>
-							</div>
-							<div class="text">
-								<h5 class="title">Enterprise-grade development secures reliability and quality</h5>
-								<p>Praesent tortor nulla, ullamcorper vel ante at, varius tincidunt augue. Cras vitae consectetur arcu. Proin at velit vel risus elementum accumsan sed non neque. Aenean risus.</p>
-							</div>
-						</li>
-						<li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-							<div class="count">
-								<span>3</span>
-							</div>
-							<div class="text">
-								<h5 class="title">A proven and tested process guarantees your success</h5>
-								<p>Aliquam bibendum velit ut ante cursus, et efficitur lectus rutrum. Maecenas ac convallis lorem, non ultricies sem. Duis elit metus, ullamcorper sed ante sed, viverra bibendum neque.</p>
-							</div>
-						</li>
-						<li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.5s">
-							<div class="count">
-								<span>4</span>
-							</div>
-							<div class="text">
-								<h5 class="title">Start-to-end app development agency</h5>
-								<p>Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque posuere vestibulum lorem.</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ***** Features End ***** -->
-
-
-	<!-- ***** Our Team Start ***** -->
-	<!-- <section class="section pbottom-70">
+<!-- ***** Our Team Start ***** -->
+<!-- <section class="section pbottom-70">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -313,40 +248,40 @@
 			</div>
 		</div>
 	</section> -->
-	<!-- ***** Our Team End ***** -->
+<!-- ***** Our Team End ***** -->
 
 
-	<!-- ***** Counter Parallax Start ***** -->
-	<section class="parallax">
-		<div class="parallax-content">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div class="count-item">
-							<strong>200</strong>
-							<span>Beta<br>Users</span>
-						</div>
+<!-- ***** Counter Parallax Start ***** -->
+<section class="parallax">
+	<div class="parallax-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12">
+					<div class="count-item">
+						<strong>200</strong>
+						<span>Beta<br>Users</span>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div class="count-item">
-							<strong>45</strong>
-							<span>%<br>Improvement</span>
-						</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12">
+					<div class="count-item">
+						<strong>45</strong>
+						<span>%<br>Improvement</span>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div class="count-item">
-							<strong>176</strong>
-							<span>App<br>Versions</span>
-						</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12">
+					<div class="count-item">
+						<strong>176</strong>
+						<span>App<br>Versions</span>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!-- ***** Counter Parallax End ***** -->
+	</div>
+</section>
+<!-- ***** Counter Parallax End ***** -->
 
-	<!-- ***** Blog Start ***** -->
-	<!-- <section class="section pbottom-70">
+<!-- ***** Blog Start ***** -->
+<!-- <section class="section pbottom-70">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -406,80 +341,7 @@
 			</div>
 		</div>
 	</section> -->
-	<!-- ***** Blog End ***** -->
+<!-- ***** Blog End ***** -->
 
 
-	<!-- ***** Footer Start ***** -->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 col-md-12 col-sm-12">
-					<img src="../static/assets/images/logo-dark.svg" class="logo" alt="">
-					<div class="text">3-L Ranch is a unique phonemic awareness game designed specifically for all who are learning English as a second language. Learn to perceive the imperceptible!</div>
-				</div>
-				<!-- <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h5>Helpful Links</h5>
-					<ul class="footer-nav">
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Our Work</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>About Us</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Services</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Blog</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Contact</span></a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h5>Latest Apps</h5>
-					<ul class="footer-nav">
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Dance School</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Coiner</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Cloud Manager</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Coding Life</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Smart Office</span></a></li>
-					</ul>
-				</div> -->
-				<div class="col-lg-3 col-md-4 col-sm-12">
-					<h5>Contact Us</h5>
-					<div class="address">
-						<p>3821 Newcomb Ave<br>Pahrump NV 89048 </p>
-						<p>Phone: +1 (571) 247-2143</p>
-						<p><span>E-Mail:</span><a href="#"> info@triplelyngo.com</a></p>
-						<!-- <ul class="social">
-							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-github-square"></i></a></li>
-						</ul> -->
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<p class="copyright">© 2023 3L-Ranch. All Rights Reserved.</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- ***** Footer Start ***** -->
-
-
-
-	<!-- jQuery -->
-	<script src="../static/assets/js/jquery-3.6.0.min.js"></script>
-
-	<!-- Bootstrap -->
-	<script src="../static/assets/js/popper.js"></script>
-	<script src="../static/assets/js/bootstrap.min.js"></script>
-
-	<!-- Plugins -->
-	<script src="../static/assets/js/scrollreveal.min.js"></script>
-	<script src="../static/assets/js/parallax.min.js"></script>
-	<script src="../static/assets/js/jquery.waypoints.min.js"></script>
-	<script src="../static/assets/js/jquery.counterup.min.js"></script>
-	<script src="../static/assets/js/imgfix.js"></script>
-
-	<!-- Global Init -->
-	<script src="../static/assets/js/custom.js"></script>
-</body>
-
-</html>
+{% endblock %}

@@ -32,6 +32,18 @@ import json
 def home():
     return render_template("home.html")
 
+@app.route("/research", methods=["GET"])
+def research():
+    return render_template("research.html")
+
+@app.route("/contact", methods=["GET"])
+def contact():
+    return render_template("contact.html")
+
+@app.route("/instructions", methods=["GET"])
+def instructions():
+    return render_template("instructions.html")
+
 # GTTS
 # from flask_gtts import gtts
 # gtts(app, temporary=False, tempdir='flask_gtts', route=True, route_path='/gtts')

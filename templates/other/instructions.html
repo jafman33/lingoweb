@@ -15,19 +15,19 @@
 	<meta name="copyright" content="tempload">
 	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
 
-	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
-	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
-	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	<link rel="stylesheet" href="../static/assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="../static/assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="../static/assets/js/google-code-prettify/prettify.js"></script>
 
 
 
-	<script src="assets/js/jquery.js"></script>
+	<script src="../static/assets/js/jquery.js"></script>
 
-	<script src="assets/js/jquery.scrollTo.js"></script>
-	<script src="assets/js/jquery.easing.js"></script>
+	<script src="../static/assets/js/jquery.scrollTo.js"></script>
+	<script src="../static/assets/js/jquery.easing.js"></script>
 
 	<script>document.createElement('section'); var duration = '500', easing = 'swing';</script>
-	<script src="assets/js/script.js"></script>
+	<script src="../static/assets/js/script.js"></script>
 
 	<style>
 		html {
@@ -211,7 +211,7 @@ gulp watch</pre>
 			<p>
 				To change the photo in the Welcome area, you need to add the full path to your photo below, in the home.html file.</p>
 			<pre class="prettyprint lang-html linenums">
-&lt;div class=&quot;welcome-bg&quot; data-bg=&quot;assets/images/photos/welcome.jpg&quot;&gt;</pre>
+&lt;div class=&quot;welcome-bg&quot; data-bg=&quot;../static/assets/images/photos/welcome.jpg&quot;&gt;</pre>
 		</section>
 		<section id="home_parallax">
 			<div class="page-header">
@@ -219,11 +219,11 @@ gulp watch</pre>
 				<hr class="notop">
 			</div>
 			<p>
-				To change the parallax photo on the home page, you need to change the <strong>imageSrc</strong> line in the <strong>assets/js/custom.js</strong> file.</p>
+				To change the parallax photo on the home page, you need to change the <strong>imageSrc</strong> line in the <strong>../static/assets/js/custom.js</strong> file.</p>
 			<pre class="prettyprint lang-js linenums">
 if($(&#39;.parallax&#39;).length){
      $(&#39;.parallax&#39;).parallax({
-          imageSrc: &#39;assets/images/photos/parallax.jpg&#39;,
+          imageSrc: &#39;../static/assets/images/photos/parallax.jpg&#39;,
           zIndex: &#39;1&#39;
      });
 }</pre>
@@ -238,7 +238,7 @@ if($(&#39;.parallax&#39;).length){
 			<p>
 				If you want to use different photos for each page cover, you need to change the following code on the related page.</p>
 			<pre class="prettyprint lang-html linenums">
-&lt;div class=&quot;cover&quot; data-image=&quot;assets/images/photos/parallax.jpg&quot;&gt;</pre>
+&lt;div class=&quot;cover&quot; data-image=&quot;../static/assets/images/photos/parallax.jpg&quot;&gt;</pre>
 		</section>
 		<section id="contact_google_maps">
 			<div class="page-header">
@@ -261,7 +261,7 @@ if($(&#39;.parallax&#39;).length){
      data-type=&quot;roadmap&quot;
      data-hue=&quot;#ffc400&quot;
      data-title=&quot;Beapp&quot;
-     data-icon-path=&quot;assets/images/marker.png&quot;
+     data-icon-path=&quot;../static/assets/images/marker.png&quot;
      data-content=&quot;455 West Orchard Street&lt;br&gt;Kings Mountain, NC 28086&lt;br&gt;&lt;br&gt;&lt;a href=&#39;mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#121;&#111;&#117;&#114;&#98;&#114;&#97;&#110;&#100;&#46;&#99;&#111;&#109;&#39;&gt;mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#121;&#111;&#117;&#114;&#98;&#114;&#97;&#110;&#100;&#46;&#99;&#111;&#109;&lt;/a&gt;&quot;&gt;
 &lt;/div&gt;</pre>
 			<p>
